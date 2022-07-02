@@ -1,0 +1,28 @@
+-to pass a value into a string or print statement, use:
+'{}'.format(value)
+-to display that value within the string as a float number with a specific number of decimal places (ex:2):
+'{.2f}'.format(value)
+
+-To execute a script/module from the IDLE environment, ensure the script executes from a "main()" function.
+
+import script_name
+
+script_name.main()
+
+-OR just have the entire script without a main function, just run
+import script_name
+
+-Python install location:
+C:\Users\Matt\AppData\Local\Programs\Python\Python310\
+
+-Python scripts executable from a command line prompt:
+C:\Users\Matt\AppData\Local\Programs\Python\Python310\Scripts
+
+-to alter Python's default paths, create a new environmental variable called PYTHONPATH, and place 
+inside it all the path locations that you want python to search.  (In windows, those are separated
+by ";", otherwise, by ",")
+
+-You can also pernanently alter the sys.path list by going to 
+C:\Users\Matt\AppData\Local\Programs\Python\Python310\Lib\site-packages
+-and creating a new file called "my-paths.pth"
+-each line of that file should contain a path that you want to add to sys.path
